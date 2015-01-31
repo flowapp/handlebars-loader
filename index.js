@@ -129,7 +129,7 @@ module.exports = function(source) {
 
 		try {
 			template = hb.precompile(source, {
-				knownHelpersOnly: firstCompile ? false : true,
+				knownHelpersOnly: false,
 				knownHelpers: knownHelpers
 			});
 		} catch (err) {
